@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог Кэт Энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
     <header>
@@ -34,11 +35,12 @@
         <div class="main-catalog-container">
             <ul class="main-catalog">
                 <li class="main-catalog__card card">
-                    <div class="card__img-container">
+                    <a class="card__img-container" href="#">
                         <img class="card__picture" src="" alt=" ">
-                    </div>
+                    </a>
                     <div class="card__info-container">
-                        <h3 class="card__title">Cat Energy PRO 500 г</h3>
+
+                        <h3 class="card__title"><a href="#" class="card__link">Cat Energy PRO 500 г</a></h3>
                         <dl class="card__data-list">
                             <dt>Масса</dt>
                             <dd>500 г</dd>
@@ -48,25 +50,26 @@
                             <dd>700 Р.</dd>
                         </dl>
                     </div>
-                    <button class="card__button button" type="submit">Заказать</button>
+                    <a class="card__button button" href="#">Заказать</button>
                 </li>
                 <li class="main-catalog__card card">
-                    <div class="card__img-container">
-                        <img class="card__picture" src="" alt=" ">
-                    </div>
-                    <div class="card__info-container">
-                        <h3 class="card__title">Cat Energy PRO 500 г</h3>
-                        <dl class="card__data-list">
-                            <dt>Масса</dt>
-                            <dd>500 г</dd>
-                            <dt>Вкус</dt>
-                            <dd>Курица</dd>
-                            <dt>Цена</dt>
-                            <dd>700 Р.</dd>
-                        </dl>
-                    </div>
-                    <button class="card__button button" type="submit">Заказать</button>
-                </li>
+                  <a class="card__img-container" href="#">
+                      <img class="card__picture" src="" alt=" ">
+                  </a>
+                  <div class="card__info-container">
+
+                      <h3 class="card__title"><a href="#" class="card__link">Cat Energy PRO 500 г</a></h3>
+                      <dl class="card__data-list">
+                          <dt>Масса</dt>
+                          <dd>500 г</dd>
+                          <dt>Вкус</dt>
+                          <dd>Курица</dd>
+                          <dt>Цена</dt>
+                          <dd>700 Р.</dd>
+                      </dl>
+                  </div>
+                  <a class="card__button button" href="#">Заказать</button>
+              </li>
                 <li class="catalog__card card-show-more">
                     <div class="card-show-more__img-container">
                         <img class="card-show-more__picture" src="" alt=" ">
@@ -75,7 +78,7 @@
                         <h3 class="card-show-more__title">показать еще 100500 товаров</h3>
                         <p class="card-show-more__text">На самом деле вкусов гораздо больше!</p>
                     </div>
-                    <button class="card__button button" type="submit">показать все</button>
+                    <a class="card-show-more__button button" href="#">показать все</a>
                 </li>
             </ul>
         </div>
@@ -88,7 +91,7 @@
                         <dt>1 упаковка (100 г)</dt>
                         <dd>200 Р.</dd>
                     </dl>
-                    <button class="sub-card__button button" type="submit">Заказать</button>
+                    <a class="sub-card__button button" href="#">Заказать</button>
                 </li>
                 <li class="sub-catalog__item sub-card">
                     <h3 class="sub-card__title">питьевая вода</h3>
@@ -96,7 +99,7 @@
                         <dt>5 литров</dt>
                         <dd>50 Р.</dd>
                     </dl>
-                    <button class="sub-card__button button" type="submit">Заказать</button>
+                    <a class="sub-card__button button" href="#">Заказать</button>
                 </li>
                 <li class="sub-catalog__item sub-card">
                     <h3 class="sub-card__title">сахарозаменитель</h3>
@@ -104,7 +107,7 @@
                         <dt>1 упаковка (100 г)</dt>
                         <dd>200 Р.</dd>
                     </dl>
-                    <button class="sub-card__button button" type="submit">Заказать</button>
+                    <a class="sub-card__button button" href="#">Заказать</button>
                 </li>
                 <li class="sub-catalog__item sub-card">
                     <h3 class="sub-card__title">питьевая вода</h3>
@@ -112,13 +115,15 @@
                         <dt>5 литров</dt>
                         <dd>50 Р.</dd>
                     </dl>
-                    <button class="sub-card__button button" type="submit">Заказать</button>
+                    <a class="sub-card__button button" href="#">Заказать</button>
                 </li>
             </ul>
         </div>
         <section class="promo">
             <h2 class="visually-hidden">Подарок при покупке</h2>
-            <div class="promo__image"></div>
+            <div class="promo__image">
+              <img src="" alt=" ">
+            </div>
             <p class="promo__text">Закажите все и получите чехол для кота в подарок!</p>
         </section>
     </main>

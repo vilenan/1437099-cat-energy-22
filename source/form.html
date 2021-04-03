@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Подбор программы питания в Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -37,57 +38,57 @@
       <form class="form__container" action="https://echo.htmlacademy.ru" method="POST">
         <fieldset class="form__section cat-data">
           <p class="cat-data__item">
-            <label class="cat-data__title" for="name">имя:<sup>*</sup></label>
-            <input class="user-data__input" type="text" id="name" name="cat-name" value="барсик"></p>
+            <label class="form__input-label" for="name">имя:<sup>*</sup></label>
+            <input class="form__input-text" type="text" id="name" name="cat-name" value="барсик"></p>
           <p class="cat-data__item">
-            <label class="cat-data__title" for="weight">вес(кг):<sup>*</sup></label>
-            <input class="user-data__input" type="number" id="weight" name="cat-weight" value="7"></p>
+            <label class="form__input-label" for="weight">вес(кг):<sup>*</sup></label>
+            <input class="form__input-text" type="number" id="weight" name="cat-weight" value="7"></p>
           <p class="cat-data__item">
-            <label class="cat-data__title" for="age">возраст(лет):</label>
-            <input class="user-data__input" type="number" min="0" max="30" id="age" name="cat-age" value="7"></p>
+            <label class="form__input-label" for="age">возраст(лет):</label>
+            <input class="form__input-text" type="number" min="0" max="30" id="age" name="cat-age" value="7"></p>
         </fieldset>
 
         <fieldset class="form__section program-goal">
           <p class="program-goal__option">
-            <label class="program-goal__title" for="slimming">похудение</label>
-            <input class="program-goal__input" type="radio" name="goal" value="slimming" id="slimming" checked></p>
+            <label class="form__input-label" for="slimming">похудение</label>
+            <input class="form__input-radio" type="radio" name="goal" value="slimming" id="slimming" checked></p>
           <p class="program-goal__option">
-            <label class="program-goal__title" for="bulking">набор массы</label>
-            <input class="program-goal__input" type="radio" name="goal" value="bulking" id="bulking"></p>
+            <label class="form__input-label" for="bulking">набор массы</label>
+            <input class="form__input-radio" type="radio" name="goal" value="bulking" id="bulking"></p>
           <p class="program-goal__option">
-            <label class="program-goal__title" for="recommend">не знаю (нужен вашсовет)</label>
-            <input class="program-goal__input" type="radio" name="goal" value="recommend" id="recommend"></p>
+            <label class="form__input-label" for="recommend">не знаю (нужен вашсовет)</label>
+            <input class="form__input-radio" type="radio" name="goal" value="recommend" id="recommend"></p>
         </fieldset>
 
         <fieldset class="form__section owner-contacts">
           <legend class="owner-contacts__legend">Контактные данне (владельца кота)</legend>
           <p class="owner-contacts__item">
-            <label class="owner-contacts__title" for="email">e-mail:<sup>*</sup></label>
-            <input class="owner-contacts__input" type="email" id="email-field" name="owner-email" placeholder="kuklachev@gmail.com"></p>
+            <label class="form__input-label" for="email">e-mail:<sup>*</sup></label>
+            <input class="form__input-text" type="email" id="email-field" name="owner-email" placeholder="kuklachev@gmail.com"></p>
           <p class="owner-contacts__item">
-            <label class="owner-contacts__title" for="phone">телефон:<sup>*</sup></label>
-            <input class="owner-contacts__input" type="tel" id="phone-field" name="owner-phone" placeholder="8 (960) 900-60-90"></p>
+            <label class="form__input-label" for="phone">телефон:<sup>*</sup></label>
+            <input class="form__input-text" type="tel" id="phone-field" name="owner-phone" placeholder="8 (960) 900-60-90"></p>
         </fieldset>
 
         <fieldset class="form__section comments">
-          <legend class="comments__legend">Комментарий</legend>
-          <textarea class="comments__text" name="comments" id="user-comments" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
+          <legend class="form__legend">Комментарий</legend>
+          <textarea class="form__input-text" name="comments" id="user-comments" cols="30" rows="10" aria-label="Расскажите обо всех повадках кота" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
 
         <fieldset class="form__section extra">
-          <legend class="extra__legend">Дополнительно</legend>
+          <legend class="form__legend">Дополнительно</legend>
           <p class="extra__item">
-            <label class="extra__title" for="sweetener">сахарозаменитель</label>
-            <input class="extra__input" type="checkbox" name="sweetener" id="sweetener" checked></p>
+            <label class="form__input-label" for="sweetener">сахарозаменитель</label>
+            <input class="form__input-checkbox" type="checkbox" name="sweetener" id="sweetener" checked></p>
           <p class="extra__item">
-            <label class="extra__title" for="water">питьевая вода</label>
-            <input class="extra__input" type="checkbox" name="water" id="water"></p>
+            <label class="form__input-label" for="water">питьевая вода</label>
+            <input class="form__input-checkbox" type="checkbox" name="water" id="water"></p>
           <p class="extra__item">
-            <label class="extra__title" for="milk">молоко</label>
-            <input class="extra__input" type="checkbox" name="milk" id="milk"></p>
+            <label class="form__input-label" for="milk">молоко</label>
+            <input class="form__input-checkbox" type="checkbox" name="milk" id="milk"></p>
           <p class="extra__item">
-            <label class="extra__title" for="vitamins">витамины</label>
-            <input class="extra__input" type="checkbox" name="vitamins" id="vitamins"></p>
+            <label class="form__input-label" for="vitamins">витамины</label>
+            <input class="form__input-checkbox" type="checkbox" name="vitamins" id="vitamins"></p>
         </fieldset>
         <button class="form__button button" type="submit">отправить заявку</button>
         <span class="form__footnote"><sup>*</sup>-Обязательные поля</span>
