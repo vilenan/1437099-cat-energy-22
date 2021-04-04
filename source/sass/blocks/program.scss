@@ -1,0 +1,31 @@
+.program {
+  background-color: $basicgrey;
+
+  &--slim {}
+}
+
+.program__title {
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: $basicblack;
+}
+
+.program__description {
+  font-family: "Arial", sans-serif;
+}
+
+.program__link {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $basicblack;
+
+  &:hover {}
+
+  &:active {
+    opacity: 0.3;
+  }
+
+}
