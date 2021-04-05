@@ -1,4 +1,6 @@
-.results {}
+.results {
+  @include flex_between;
+}
 
 .results__item {}
 

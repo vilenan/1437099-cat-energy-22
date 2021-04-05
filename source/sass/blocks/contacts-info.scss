@@ -1,6 +1,9 @@
-.contacts-info {}
+.contacts-info {
+  @include flex_between;
+}
 
 .contacts-info__text {
+  width: 140px;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -12,4 +15,5 @@
   font-size: 14px;
   line-height: 20px;
   font-style: normal;
+  width: 140px;
 }
