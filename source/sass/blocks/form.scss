@@ -1,0 +1,134 @@
+.form__text {
+  text-transform: uppercase;
+  color: $black;
+}
+
+.form__section {
+  @include reset;
+  border: none;
+  padding-top: 22px;
+  padding-bottom: 19px;
+}
+
+.form__legend {
+  font-size: 24px;
+  line-height: 26px;
+  color: $black;
+}
+
+.form__input-label {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $grey--darken;
+
+  &--radio {
+    color: $grey--darkest;
+    padding-left: 45px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 1px solid $grey;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  &--checkbox {
+    color: $grey--darkest;
+    padding-left: 45px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border: 1px solid $grey;
+      left: 0;
+      top: 0;
+    }
+  }
+}
+
+.form__input-text {
+  padding: 14px;
+  border: 1px solid $grey--light;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $grey--darken;
+
+  &:hover {
+    border: 1px solid $grey;
+  }
+
+  &:focus {
+    border: 2px solid $grey--darken;
+  }
+}
+
+.form__input-radio {
+  &:hover+.form__input-label--radio::before {
+    border: 1px solid $grey-dark;
+  }
+
+  &:checked+.form__input-label--radio::after {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: $accent;
+    left: 9px;
+    top: 9px;
+  }
+
+  &:disabled+.form__input-label--radio {
+    opacity: 0.3;
+  }
+}
+
+.form__input-checkbox {
+  &:hover+.form__input-label--checkbox::before {
+    border: 1px solid $grey-dark;
+  }
+
+  &:checked+.form__input-label--checkbox::after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 14px;
+    background-image: url("../../img/checkbox_checked.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    left: 9px;
+    top: 9px;
+  }
+
+  &:disabled+.form__input-label--checkbox::after {
+    opacity: 0.3;
+  }
+}
+
+.form__button {
+  border: none;
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form__footnote {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: $black;
+}

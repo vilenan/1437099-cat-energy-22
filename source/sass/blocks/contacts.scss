@@ -1,3 +1,11 @@
-.contacts {
+.contacts__content {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 28px;
+  padding-bottom: 28px;
   background-color: $white;
+
+  &--inner-page {
+    background-color: $grey--lighten;
+  }
 }
