@@ -1,5 +1,22 @@
-.promo__title {}
+.promo {
+  background-image: url("../../img/index-background.jpg");
+  background-repeat: no-repeat;
+  height: 480px;
+}
 
-.promo__slogan {}
+.promo__wrapper {
+  padding: 0 20px;
+}
 
-.promo__link {}
+.promo__title {
+  color: $white;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.promo__slogan {
+  color: $white;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}

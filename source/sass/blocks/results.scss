@@ -1,13 +1,7 @@
-.results {
-  @include flex_between;
-}
-
-.results__item {}
-
 .results__number {
   font-size: 24px;
   line-height: 24px;
-  color: $basicblack;
+  color: $black;
 }
 
 .results__description {

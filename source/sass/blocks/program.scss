@@ -1,14 +1,12 @@
 .program {
-  background-color: $basicgrey;
-
-  &--slim {}
+  background-color: $grey--lighten;
 }
 
 .program__title {
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
-  color: $basicblack;
+  color: $black;
 }
 
 .program__description {
@@ -20,12 +18,9 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  color: $basicblack;
-
-  &:hover {}
+  color: $black;
 
   &:active {
     opacity: 0.3;
   }
-
 }

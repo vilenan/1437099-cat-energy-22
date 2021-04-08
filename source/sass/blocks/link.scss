@@ -1,15 +1,15 @@
 .link {
-  background-color: $basicgreen;
-  color: $basicwhite;
+  background-color: $accent;
+  color: $white;
   text-transform: uppercase;
   text-decoration: none;
 
   &:hover {
-    background-color: $basicgreen2;
+    background-color: $accent--darken;
   }
 
   &:focus,
   &:active {
-    color: rgba($color: #FFFFFF, $alpha: 0.3);
+    color: rgba($color: #ffffff, $alpha: 0.3);
   }
 }

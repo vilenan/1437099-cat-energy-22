@@ -1,13 +1,9 @@
-.contacts-info {
-  @include flex_between;
-}
-
 .contacts-info__text {
   width: 140px;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: $darkdarkgrey;
+  color: $black;
 }
 
 .contacts-info__adress {

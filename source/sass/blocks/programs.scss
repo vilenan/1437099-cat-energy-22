@@ -1,8 +1,9 @@
 .programs {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    row-gap: 20px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 20px;
 }
+
 .programs__item {
-    padding: 20px;
+  padding: 20px;
 }

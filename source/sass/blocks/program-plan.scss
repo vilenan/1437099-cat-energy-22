@@ -1,15 +1,11 @@
-.program-plan {}
-
 .program-plan__title {
   font-size: 36px;
   line-height: 40px;
-  color: $basicblack;
+  color: $black;
 }
 
 .program-plan__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @include reset;
 }
 
 .program-plan__content {

@@ -1,5 +1,5 @@
 .client-story {
-  background-color: $basicgrey2;
+  background-color: $grey--lighten;
   padding-top: 27px;
   padding-bottom: 25px;
 }
@@ -7,7 +7,7 @@
 .client-story__title {
   font-size: 36px;
   line-height: 40px;
-  color: $basicblack;
+  color: $black;
 }
 
 .client-story__content {
@@ -18,8 +18,7 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
-  color: $basicblack;
-
+  color: $black;
 }
 
 .client-story__button {
@@ -29,5 +28,5 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: $basicblack;
+  color: $black;
 }
