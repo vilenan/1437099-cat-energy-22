@@ -1,0 +1,32 @@
+.client-story {
+  background-color: $grey--lighten;
+  padding-top: 27px;
+  padding-bottom: 25px;
+}
+
+.client-story__title {
+  font-size: 36px;
+  line-height: 40px;
+  color: $black;
+}
+
+.client-story__content {
+  font-family: "Arial", sans-serif;
+}
+
+.client-story__cost {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.client-story__button {
+  background-color: transparent;
+  border: none;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $black;
+}
