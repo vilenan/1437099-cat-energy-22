@@ -1,0 +1,25 @@
+.promo-gift {
+  margin-bottom: 35px;
+}
+
+.promo-gift__wrapper {
+  background-image: url("../../img/promo_catalog.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  padding: 58px 60px 43px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.promo-gift__text {
+  color: $white;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}

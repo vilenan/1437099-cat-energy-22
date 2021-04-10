@@ -1,4 +1,10 @@
+.socials {
+  width: 130px;
+  margin: 0 auto;
+}
+
 .socials__list {
   @include reset;
   display: flex;
+  justify-content: space-between;
 }
