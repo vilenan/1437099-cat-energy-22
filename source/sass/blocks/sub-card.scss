@@ -1,0 +1,27 @@
+.sub-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-card__title {
+  font-size: 16px;
+  line-height: 16px;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.sub-card__data-list {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.sub-card__button {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 40px;
+}

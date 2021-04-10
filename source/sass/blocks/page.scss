@@ -6,6 +6,7 @@
 }
 
 .page__body {
+  box-sizing: border-box;
   background-color: $white;
   color: $grey--darken;
   min-width: 320px;
