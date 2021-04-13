@@ -1,9 +1,15 @@
 .programs {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  row-gap: 20px;
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
 }
 
 .programs__item {
-  padding: 20px;
+  margin-bottom: 20px;
+
+  @media (min-width: $table-width) {
+    margin-bottom: 30px;
+  }
 }

@@ -1,4 +1,5 @@
 .program-plan__title {
+  font-weight: normal;
   font-size: 36px;
   line-height: 40px;
   color: $black;
@@ -6,9 +7,53 @@
 
 .program-plan__list {
   @include reset;
+
+  @media (min-width: $table-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.program-plan__item {
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $table-width) {
+    min-height: 230px;
+    flex-direction: column;
+    align-items: flex-start;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+
+    &--healthy-components {
+      background-image: url("../../img/1_index.svg");
+    }
+
+    &--powder {
+      background-image: url("../../img/2_index.svg");
+    }
+
+    &--include {
+      background-image: url("../../img/3_index.svg");
+    }
+
+    &--terms {
+      background-image: url("../../img/4_index.svg");
+    }
+  }
+}
+
+.program-plan__image {
+  margin-right: 20px;
 }
 
 .program-plan__content {
-  font-family: "Arial",
-    sans-serif;
+  font-family: "Arial", sans-serif;
 }

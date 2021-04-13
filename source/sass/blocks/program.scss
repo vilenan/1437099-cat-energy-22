@@ -1,16 +1,34 @@
 .program {
   background-color: $grey--lighten;
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  padding-top: 20px;
 }
 
 .program__title {
+  margin: 0;
+  font-weight: normal;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
   color: $black;
 }
 
+.program__image {
+  justify-self: center;
+}
+
 .program__description {
   font-family: "Arial", sans-serif;
+  grid-column: 1/-1;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid $grey;
+
+  @media (min-width: $table-width) {
+    border: none;
+  }
 }
 
 .program__link {
@@ -19,6 +37,8 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $black;
+  grid-column: 1/-1;
+  padding: 15px 20px;
 
   &:active {
     opacity: 0.3;

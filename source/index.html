@@ -10,18 +10,11 @@
 
 <body class="page__body">
   <header class="page-header">
-
     <a class="logo logo--mobile">
       <img src="img/header-logo--mobile.png" alt="логотип Кэт энерджи">
     </a>
-
-    <nav class="navigation">
+    <nav class="navigation navigation--opened">
       <button class="navigation__toggle button" type="button">
-        <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <line y1="1.25" x2="24" y2="1.25" stroke="black" stroke-width="1.5" />
-          <line y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5" />
-          <line y1="17.25" x2="24" y2="17.25" stroke="black" stroke-width="1.5" />
-        </svg>
         <span class="visually-hidden">открыть меню</span>
       </button>
       <div class="navigation__wrapper">
@@ -44,41 +37,50 @@
     <h1 class="visually-hidden">"Кэт энерджи" - магазин продуктов для функционального питания котов</h1>
 
     <section class="promo">
-      <div class="promo__wrapper">
+      <div class="promo__wrapper container">
         <h2 class="promo__title">Функциональное питание для котов</h2>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
         <a class="promo__link link" href="form.html">подобрать программу</a>
       </div>
     </section>
-    <section class="programs">
+    <section class="programs container">
       <h2 class="visually-hidden">Программы функционального питания</h2>
       <div class="programs__item program program--slim">
+
+        <img class="program__image" src="img/cat_slim_icon.png" alt=" " width="50" height="53">
         <h3 class="program__title">похудение</h3>
-        <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора
-          на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+        <div class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
+          Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+        </div>
         <a href="#" class="program__link">каталог slim</a>
       </div>
       <div class="programs__item program program--pro">
+        <img class="program__image" src="img/cat_pro_icon.png" alt=" " width="67" height="50">
         <h3 class="program__title">набор массы</h3>
-        <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
-          поможет вашему коту нарастить необходимые мышцы!</p>
+        <div class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
+          поможет вашему коту нарастить необходимые мышцы!
+        </div>
         <a href="#" class="program__link">каталог pro</a>
       </div>
     </section>
-    <section class="program-plan">
+    <section class="program-plan container">
       <h2 class="program-plan__title">Как это работает</h2>
       <ul class="program-plan__list">
-        <li class="program-plan__item program-plan__item--healthy--components">
+        <li class="program-plan__item program-plan__item--healthy-components">
+          <img class="program-plan__image" src="img/index_icon_1.png" alt="" width="60" height="60">
           <p class="program-plan__content">Функциональное питание содержит только полезные питательные вещества.</p>
         </li>
         <li class="program-plan__item program-plan__item--powder">
+          <img class="program-plan__image" src="img/index_icon_2.png" alt="" width="60" height="60">
           <p class="program-plan__content">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
         </li>
         <li class="program-plan__item program-plan__item--include">
+          <img class="program-plan__image" src="img/index_icon_3.png" alt="" width="60" height="60">
           <p class="program-plan__content">Замените один-два приема обычной еды на наше
             функциональное питание.</p>
         </li>
         <li class="program-plan__item  program-plan__item--terms">
+          <img class="program-plan__image" src="img/index_icon_4.png" alt="" width="60" height="60">
           <p class="program-plan__content">Уже через месяц наслаждайтесь изменениями к лучшему
             вашего питомца!</p>
         </li>
@@ -86,30 +88,35 @@
     </section>
 
     <section class="client-story">
-      <h2 class="client-story__title">Живой пример</h2>
-      <p class="client-story__content">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-        Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
-        часов в день. </p>
-      <dl class="client-story__results results">
-        <div class="results__item">
-          <dt class="results__number">5 КГ</dt>
-          <dd class="results__description">снижение веса</dd>
+      <div class="container">
+        <h2 class="client-story__title">Живой пример</h2>
+        <p class="client-story__content">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+          Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
+          16
+          часов в день. </p>
+        <div class="client-story__content-points">
+          <dl class="client-story__results results">
+            <div class="results__item">
+              <dt class="results__number">5 КГ</dt>
+              <dd class="results__description">снижение веса</dd>
+            </div>
+            <div class="results__item">
+              <dt class="results__number">60 ДНЕЙ</dt>
+              <dd class="results__description">затрачено времени</dd>
+            </div>
+          </dl>
+          <p class="client-story__cost">Затраты на питание: 15 000 РУБ. </p>
         </div>
-        <div class="results__item">
-          <dt class="results__number">60 ДНЕЙ</dt>
-          <dd class="results__description">затрачено времени</dd>
+        <div class="client-story__img client-story__img--before">
+          <img src="img/before-mobile.png" alt="кот до прохождения программы снижения веса Кэт энерджи">
         </div>
-      </dl>
-      <p class="client-story__cost">Затраты на питание: 15 000 РУБ. </p>
-      <div class="client-story__img client-story__img--before">
-        <img src="img/before-mobile.png" alt="кот до прохождения программы снижения веса Кэт энерджи">
+        <div class="client-story__img client-story__img--after client-story__img--closed">
+          <img src="img/after_mobile.png" alt="кот после прохождения программы снижения веса Кэт энерджи">
+        </div>
+        <button class="client-story__button button" type="button">было</button>
+        <div class="client-story__switcher"></div>
+        <button class="client-story__button button" type="button">стало</button>
       </div>
-      <div class="client-story__img client-story__img--after">
-        <img src="img/after_mobile.png" alt="кот после прохождения программы снижения веса Кэт энерджи">
-      </div>
-      <button class="client-story__button button" type="button">было</button>
-      <div class="client-story__switcher"></div>
-      <button class="client-story__button button" type="button">стало</button>
     </section>
   </main>
 
@@ -117,17 +124,17 @@
 
     <div class="footer__contacts contacts">
 
-      <div class="contacts__content contacts-info">
+      <div class="contacts__content contacts-info container">
         <p class="contacts-info__text">приглашаем к сотрудничеству дилеров!</p>
         <address class="contacts-info__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
       <div class="contacts__map map">
-        <iframe
+        <iframe class="map__image"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1617544591745!5m2!1sru!2sru"
           style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </div>
-    <div class="footer__bottom">
+    <div class="footer__bottom container">
       <a class="footer__logo-name logo-name">
         <svg class="logo-name__image" width="128" height="24" viewBox="0 0 128 24" fill="none"
           xmlns="http://www.w3.org/2000/svg">
@@ -213,7 +220,7 @@
       </div>
     </div>
   </footer>
-
+  <script src="js/nav.js"></script>
 </body>
 
 </html>
