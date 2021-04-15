@@ -1,4 +1,13 @@
 .page-header {
-  padding-right: 20 px;
-  padding-left: 20px;
+  background-color: $white;
+
+  @media (min-width: $table-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+  }
 }

@@ -1,4 +1,15 @@
 .container {
-  padding-left: 20px;
-  padding-right: 20px;
+  width: auto; // 280px
+  padding: 0 20px;
+
+  @media (min-width: $table-width) {
+    width: auto; //708px
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0 110px;
+  }
 }

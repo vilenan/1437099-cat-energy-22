@@ -1,16 +1,129 @@
 .program {
   background-color: $grey--lighten;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $table-width) {
+    padding-top: 77px;
+    padding-left: 53px;
+    padding-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 41px;
+    padding-left: 53px;
+    padding-bottom: 53px;
+  }
 }
 
 .program__title {
+  margin: 0;
+  margin-bottom: 29px;
+  font-weight: normal;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
   color: $black;
+  padding-left: 71px;
+  position: relative;
+
+  @media (min-width: $table-width) {
+    padding-left: 0;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 162px;
+    margin-bottom: 73px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+}
+
+.program--slim .program__title::before {
+  width: 50px;
+  height: 53px;
+  left: 0;
+  background-image: url("../../img/icon_program_1.svg");
+  background-size: contain;
+
+  @media (min-width: $table-width) and (max-width: 1439px) {
+    width: 200px;
+    height: 211px;
+    left: calc(100% - 200px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 106px;
+    left: 0;
+  }
+}
+
+.program--pro .program__title::before {
+  width: 67px;
+  height: 53px;
+  left: -7px;
+  background-image: url("../../img/icon_program_2.svg");
+  background-size: contain;
+
+  @media (min-width: $table-width) and (max-width: 1439px) {
+    width: 268px;
+    height: 200px;
+    left: calc(100% - 268px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 100px;
+    left: 0;
+  }
+}
+
+
+.program__image {
+  justify-self: center;
 }
 
 .program__description {
   font-family: "Arial", sans-serif;
+  padding-bottom: 23px;
+  border-bottom: 1px solid $grey;
+
+  @media (min-width: $table-width) {
+    border: none;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: $black;
+  }
+}
+
+.program--slim .program__description {
+  @media (min-width: $table-width) {
+    width: calc(100% - 200px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.program--pro .program__description {
+  @media (min-width: $table-width) {
+    width: calc(100% - 268px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .program__link {
@@ -19,6 +132,8 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $black;
+  display: block;
+  padding: 15px 20px;
 
   &:active {
     opacity: 0.3;

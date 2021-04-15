@@ -1,12 +1,11 @@
 .client-story {
   background-color: $grey--lighten;
-  padding-top: 27px;
-  padding-bottom: 25px;
 }
 
 .client-story__title {
   font-size: 36px;
   line-height: 40px;
+  font-weight: normal;
   color: $black;
 }
 
@@ -14,11 +13,28 @@
   font-family: "Arial", sans-serif;
 }
 
+.client-story__content-points {
+  @media (min-width: $table-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.client-story__results {
+  @media (min-width: $table-width) {
+    width: 52%;
+  }
+}
+
 .client-story__cost {
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
   color: $black;
+}
+
+.client-story__img--closed {
+  display: none;
 }
 
 .client-story__button {
