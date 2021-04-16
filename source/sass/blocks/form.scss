@@ -1,3 +1,11 @@
+.form__container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+}
+
 .form__text {
   text-transform: uppercase;
   color: $black;
@@ -10,10 +18,61 @@
   padding-bottom: 19px;
 }
 
+.form__section--goal {
+  @media (min-width: $table-width) {
+    padding: 28px 25px;
+    border: 1px solid $grey--light;
+  }
+}
+
+.form__section--contacts,
+.form__section--comments,
+.form__section--extra {
+  @media (min-width: $desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+}
+
+.form__section-wrapper {
+  display: grid;
+  row-gap: 13px;
+
+  @media (min-width: $table-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.form__button-wrapper {
+  @media (min-width: $table-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    margin-bottom: 82px;
+  }
+}
+
 .form__legend {
   font-size: 24px;
   line-height: 26px;
   color: $black;
+}
+
+.form__item {
+  display: flex;
+  align-items: center;
 }
 
 .form__input-label {
@@ -64,6 +123,9 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $grey--darken;
+  flex-grow: 1;
+  margin-left: 13px;
+  box-sizing: border-box;
 
   &:hover {
     border: 1px solid $grey;
@@ -71,6 +133,12 @@
 
   &:focus {
     border: 2px solid $grey--darken;
+  }
+
+  &--textarea {
+    @include reset;
+    width: 100%;
+    padding: 10px 15px;
   }
 }
 
@@ -122,6 +190,9 @@
   font-style: normal;
   font-weight: normal;
   font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  width: 100%;
 }
 
 .form__footnote {
