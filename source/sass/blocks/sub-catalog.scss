@@ -5,9 +5,30 @@
 .sub-catalog__title {
   font-size: 24px;
   line-height: 24px;
+  font-weight: normal;
   color: $black;
+  margin-bottom: 36px;
+
+  @media (min-width: $table-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 80px;
+  }
+}
+
+.sub-catalog__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 60px;
+  }
 }
 
 .sub-catalog__list {
   @include reset;
+
+  @media (min-width: $table-width) {
+    grid-column: 1/-2;
+    margin-bottom: 68px;
+  }
 }

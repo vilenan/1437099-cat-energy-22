@@ -1,5 +1,6 @@
 .page-header {
   background-color: $white;
+  position: relative;
 
   @media (min-width: $table-width) {
     display: flex;

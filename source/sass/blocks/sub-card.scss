@@ -1,6 +1,27 @@
 .sub-card {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $table-width) {
+    padding: 36px 28px;
+    border: 1px solid $grey;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &:not(:last-child) {
+      border-bottom: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 0;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .sub-card__title {
@@ -9,6 +30,12 @@
   font-style: normal;
   font-weight: normal;
   text-transform: uppercase;
+
+  @media (min-width: $table-width) {
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .sub-card__data-list {
@@ -17,6 +44,12 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 14px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $table-width) {
+    margin: 0;
+  }
 }
 
 .sub-card__button {
@@ -24,4 +57,12 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 40px;
+
+  @media (min-width: $table-width) {
+    grid-column: 1/-1;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 244px;
+  }
 }

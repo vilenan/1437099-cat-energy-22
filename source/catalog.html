@@ -10,12 +10,17 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header">
-    <a class="page-header__logo header__logo--mobile" href="index.html">
-      <img src="img/header-logo--mobile.png" alt="логотип Кэт Энерджи">
+  <header class="page-header container">
+    <a class="logo" href="index.html">
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img src="img/header-logo--mobile.png" alt="логотип Кэт энерджи">
+      </picture>
     </a>
-    <nav class="navigation">
-      <button class="navigation__toggle" type="button"><span class="visually-hidden">открыть меню</span></button>
+    <nav class="navigation navigation--opened">
+      <button class="navigation__toggle button" type="button">
+        <span class="visually-hidden">открыть меню</span>
+      </button>
       <div class="navigation__wrapper">
         <ul class="navigation__list">
           <li class="navigation__item">
@@ -32,13 +37,16 @@
     </nav>
   </header>
   <main class="page-main">
-    <h1 class="page-main__title">Каталог продукции</h1>
-    <div class="main-catalog-container">
-      <ul class="main-catalog">
+    <h1 class="page-main__title container">Каталог продукции</h1>
+    <div class="main-catalog">
+      <ul class="main-catalog__wrapper">
         <li class="main-catalog__card card">
           <div class="card__info-container">
             <a class="card__img-container" href="#">
-              <img class="card__picture" src="img/catalog-big-product.png" alt=" ">
+              <picture class="card__picture">
+                <source media="(min-width: 768px)" srcset="img/product_1-desktop.png">
+                <img src="img/catalog-big-product.png" alt=" ">
+              </picture>
             </a>
             <h3 class="card__title"><a href="#" class="card__link">Cat Energy PRO 500 г</a></h3>
             <dl class="card__data-list">
@@ -61,7 +69,10 @@
         <li class="main-catalog__card card">
           <div class="card__info-container">
             <a class="card__img-container" href="#">
-              <img class="card__picture" src="img/catalog-sm-product.png" alt=" ">
+              <picture class="card__picture">
+                <source media="(min-width: 768px)" srcset="img/product_2-desktop.png">
+                <img src="img/catalog-sm-product.png" alt=" ">
+              </picture>
             </a>
             <h3 class="card__title"><a href="#" class="card__link">Cat Energy PRO 1000 г</a></h3>
             <dl class="card__data-list">
@@ -84,7 +95,10 @@
         <li class="main-catalog__card card">
           <div class="card__info-container">
             <a class="card__img-container" href="#">
-              <img class="card__picture" src="img/catalog-product_2_sm.png" alt=" ">
+              <picture class="card__picture">
+                <source media="(min-width: 768px)" srcset="img/product_3-desktop.png">
+                <img src="img/catalog-product_2_sm.png" alt=" ">
+              </picture>
             </a>
             <h3 class="card__title"><a href="#" class="card__link">Cat Energy PRO 500 г</a></h3>
             <dl class="card__data-list">
@@ -107,7 +121,10 @@
         <li class="main-catalog__card card">
           <div class="card__info-container">
             <a class="card__img-container" href="#">
-              <img class="card__picture" src="img/catalog-product_2_big.png" alt=" ">
+              <picture class="card__picture">
+                <source media="(min-width: 768px)" srcset="img/product_4-desktop.png">
+                <img src="img/catalog-product_2_big.png" alt=" ">
+              </picture>
             </a>
             <h3 class="card__title"><a href="#" class="card__link">Cat Energy PRO 1000 г</a></h3>
             <dl class="card__data-list">
@@ -130,7 +147,10 @@
         <li class="main-catalog__card card">
           <div class="card__info-container">
             <a class="card__img-container" href="#">
-              <img class="card__picture" src="img/catalog-product_3_sm.png" alt=" ">
+              <picture class="card__picture">
+                <source media="(min-width: 768px)" srcset="img/product_5-desktop.png">
+                <img src="img/catalog-product_2_big.png" alt=" ">
+              </picture>
             </a>
             <h3 class="card__title"><a href="#" class="card__link">Cat Energy PRO 500 г</a></h3>
             <dl class="card__data-list">
@@ -153,7 +173,10 @@
         <li class="main-catalog__card card">
           <div class="card__info-container">
             <a class="card__img-container" href="#">
-              <img class="card__picture" src="img/catalog-product_3_big.png" alt=" ">
+              <picture class="card__picture">
+                <source media="(min-width: 768px)" srcset="img/product_6-desktop.png">
+                <img src="img/catalog-product_3_big.png" alt=" ">
+              </picture>
             </a>
             <h3 class="card__title"><a href="#" class="card__link">Cat Energy PRO 1000 г</a></h3>
             <dl class="card__data-list">
@@ -176,7 +199,10 @@
         <li class="main-catalog__card card">
           <div class="card__info-container">
             <a class="card__img-container" href="#">
-              <img class="card__picture" src="img/catalog-product_4_sm.png" alt=" ">
+              <picture class="card__picture">
+                <source media="(min-width: 768px)" srcset="img/product_7-desktop.png">
+                <img src="img/catalog-product_4_sm.png" alt=" ">
+              </picture>
             </a>
             <h3 class="card__title"><a href="#" class="card__link">Cat Energy PRO 500 г</a></h3>
             <dl class="card__data-list">
@@ -208,53 +234,54 @@
         </li>
       </ul>
     </div>
-    <div class="sub-catalog container">
-      <h2 class="sub-catalog__title">Дополнительные товары</h2>
-      <ul class="sub-catalog__list">
-        <li class="sub-catalog__item sub-card">
-          <h3 class="sub-card__title">сахарозаменитель</h3>
-          <dl class="sub-card__data-list">
-            <dt class="sub-card__data-title">1 упаковка (100 г)</dt>
-            <dd class="sub-card__data-description">200 Р.</dd>
-          </dl>
-          <a class="sub-card__button link" href="#">Заказать</a>
-        </li>
-        <li class="sub-catalog__item sub-card">
-          <h3 class="sub-card__title">питьевая вода</h3>
-          <dl class="sub-card__data-list">
-            <dt class="sub-card__data-title">5 литров</dt>
-            <dd class="sub-card__data-description">50 Р.</dd>
-          </dl>
-          <a class="sub-card__button link" href="#">Заказать</a>
-        </li>
-        <li class="sub-catalog__item sub-card">
-          <h3 class="sub-card__title">сахарозаменитель</h3>
-          <dl class="sub-card__data-list">
-            <dt class="sub-card__data-title">1 упаковка (100 г)</dt>
-            <dd class="sub-card__data-description">200 Р.</dd>
-          </dl>
-          <a class="sub-card__button link" href="#">Заказать</a>
-        </li>
-        <li class="sub-catalog__item sub-card">
-          <h3 class="sub-card__title">питьевая вода</h3>
-          <dl class="sub-card__data-list">
-            <dt class="sub-card__data-title">5 литров</dt>
-            <dd class="sub-card__data-description">50 Р.</dd>
-          </dl>
-          <a class="sub-card__button link" href="#">Заказать</a>
-        </li>
-      </ul>
-    </div>
-    <section class="promo-gift container">
-      <div class="promo-gift__wrapper">
-        <h2 class="visually-hidden">Подарок при покупке</h2>
-        <div class="promo-gift__image">
-          <img src="img/icon_gift_catalog.svg" alt=" ">
+    <div class="sub-catalog">
+      <h2 class="sub-catalog__title container">Дополнительные товары</h2>
+      <div class="sub-catalog__wrapper container">
+        <ul class="sub-catalog__list">
+          <li class="sub-catalog__item sub-card">
+            <h3 class="sub-card__title">сахарозаменитель</h3>
+            <dl class="sub-card__data-list">
+              <dt class="sub-card__data-title">1 упаковка (100 г)</dt>
+              <dd class="sub-card__data-description">200 Р.</dd>
+            </dl>
+            <a class="sub-card__button link" href="#">Заказать</a>
+          </li>
+          <li class="sub-catalog__item sub-card">
+            <h3 class="sub-card__title">питьевая вода</h3>
+            <dl class="sub-card__data-list">
+              <dt class="sub-card__data-title">5 литров</dt>
+              <dd class="sub-card__data-description">50 Р.</dd>
+            </dl>
+            <a class="sub-card__button link" href="#">Заказать</a>
+          </li>
+          <li class="sub-catalog__item sub-card">
+            <h3 class="sub-card__title">сахарозаменитель</h3>
+            <dl class="sub-card__data-list">
+              <dt class="sub-card__data-title">1 упаковка (100 г)</dt>
+              <dd class="sub-card__data-description">200 Р.</dd>
+            </dl>
+            <a class="sub-card__button link" href="#">Заказать</a>
+          </li>
+          <li class="sub-catalog__item sub-card">
+            <h3 class="sub-card__title">питьевая вода</h3>
+            <dl class="sub-card__data-list">
+              <dt class="sub-card__data-title">5 литров</dt>
+              <dd class="sub-card__data-description">50 Р.</dd>
+            </dl>
+            <a class="sub-card__button link" href="#">Заказать</a>
+          </li>
+        </ul>
+        <div class="promo-gift">
+          <div class="promo-gift__wrapper">
+            <h2 class="visually-hidden">Подарок при покупке</h2>
+            <div class="promo-gift__image">
+              <img src="img/icon_gift_catalog.svg" alt=" ">
+            </div>
+            <p class="promo-gift__text">Закажите все и получите чехол для кота в подарок!</p>
+          </div>
         </div>
-        <p class="promo-gift__text">Закажите все и получите чехол для кота в подарок!</p>
       </div>
-
-    </section>
+    </div>
   </main>
   <footer class="footer">
 
@@ -265,7 +292,7 @@
         <address class="contacts-info__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
       <div class="contacts__map map">
-        <iframe
+        <iframe class="map__image"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1617544591745!5m2!1sru!2sru"
           style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
@@ -356,6 +383,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/nav.js"></script>
 </body>
 
 </html>
