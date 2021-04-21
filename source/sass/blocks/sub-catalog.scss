@@ -8,11 +8,46 @@
   font-weight: normal;
   color: $black;
   margin-bottom: 36px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
 
   @media (min-width: $table-width) {
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 80px;
+    padding-left: 0;
+  }
+}
+
+.sub-catalog__title::after {
+  flex-grow: 1;
+  flex-shrink: 0;
+  content: "";
+  height: 2px;
+  background-color: $accent;
+  margin-left: 22px;
+
+  @media (min-width: $table-width) {
+    margin-left: 36px;
+  }
+}
+
+.sub-catalog__title::before {
+  @media (min-width: $table-width) {
+    width: 30px;
+    content: "";
+    height: 2px;
+    background-color: $accent;
+    margin-right: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 70px;
+    content: "";
+    height: 2px;
+    background-color: $accent;
+    margin-right: 36px;
   }
 }
 
