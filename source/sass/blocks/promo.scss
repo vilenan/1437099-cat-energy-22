@@ -27,12 +27,11 @@
       position: absolute;
       background-image: url("../../img/background_index_desktop.png");
       background-repeat: no-repeat;
-      background-position-y: -30%;
       background-size: cover;
       width: 50%;
-      height: 696px;
+      min-height: 696px;
       right: 0;
-      top: -141px;
+      top: -163px;
       z-index: -1;
     }
   }

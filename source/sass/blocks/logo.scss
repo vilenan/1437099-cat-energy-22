@@ -1,0 +1,11 @@
+.logo {
+  @media (min-width: $table-width) {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 54px;
+    margin-bottom: 54px;
+  }
+}
