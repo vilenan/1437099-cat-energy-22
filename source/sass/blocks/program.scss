@@ -135,7 +135,24 @@
   display: block;
   padding: 15px 20px;
 
+  &:hover + .program__link-name::after {
+    background-image: url("../../img/icon_arrow_big.svg");
+  }
+
   &:active {
     opacity: 0.3;
+  }
+}
+
+.program__link-name {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 12px;
+    margin-left: 15px;
+    background-image: url("../../img/icon-arrow-small.svg");
   }
 }

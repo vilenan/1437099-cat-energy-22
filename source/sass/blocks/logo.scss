@@ -1,4 +1,8 @@
 .logo {
+  padding-top: 12px;
+  padding-bottom: 16px;
+  display: block;
+
   @media (min-width: $table-width) {
     margin-top: 25px;
     margin-bottom: 25px;
@@ -8,4 +12,12 @@
     margin-top: 54px;
     margin-bottom: 54px;
   }
+}
+
+.logo[href]:hover {
+  opacity: 0.8;
+}
+
+.logo[href]:active {
+  opacity: 0.6;
 }
