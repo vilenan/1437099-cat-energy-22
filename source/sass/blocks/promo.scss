@@ -55,6 +55,7 @@
   @media (min-width: $desktop-width) {
     height: 555px;
     padding-left: 80px;
+    justify-content: flex-start;
   }
 }
 
@@ -95,6 +96,11 @@
     line-height: 20px;
     color: $black;
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 0;
+    margin-bottom: 52px;
   }
 }
 
