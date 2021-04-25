@@ -57,6 +57,8 @@
 }
 
 .client-story__content-points {
+  padding-bottom: 39px;
+
   @media (min-width: $table-width) {
     display: flex;
     justify-content: space-between;

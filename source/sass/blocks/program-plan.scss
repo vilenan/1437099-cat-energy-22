@@ -1,6 +1,6 @@
 .program-plan {
   margin-bottom: 42px;
-  margin-top: 27px;
+  margin-top: 20px;
 }
 
 .program-plan__title {
@@ -8,6 +8,7 @@
   font-size: 36px;
   line-height: 40px;
   color: $black;
+  margin-bottom: 37px;
 
   @media (min-width: $table-width) {
     font-size: 60px;

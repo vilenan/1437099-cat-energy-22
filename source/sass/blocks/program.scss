@@ -27,6 +27,8 @@
   color: $black;
   padding-left: 71px;
   position: relative;
+  display: flex;
+  align-items: center;
 
   @media (min-width: $table-width) {
     padding-left: 0;
@@ -94,7 +96,7 @@
 
 .program__description {
   font-family: "Arial", sans-serif;
-  padding-bottom: 23px;
+  padding-bottom: 22px;
   border-bottom: 1px solid $grey;
 
   @media (min-width: $table-width) {
@@ -132,7 +134,7 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $black;
-  padding: 15px 0;
+  padding: 19px 0 21px;
   display: flex;
   align-items: center;
 
