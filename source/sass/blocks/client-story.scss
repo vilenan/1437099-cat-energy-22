@@ -86,11 +86,20 @@
   @media (min-width: $table-width) {
     font-size: 20px;
     line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 52%;
   }
 }
 
 .client-story__controls {
-  width: 228px;
+  width: 196px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -98,10 +107,28 @@
 
   @media (min-width: $table-width) {
     padding-top: 700px;
+    width: auto;
+    margin-left: 60px;
+    margin-right: 60px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 500px;
+  }
+}
+
+.client-story__bar {
+  display: none;
+
+  @media (min-width: $table-width) {
+    display: block;
+    width: 100%;
+    height: 6px;
+    border-radius: 6px;
+    background-color: $grey;
+    position: relative;
+    margin-right: 16px;
+    margin-left: 16px;
   }
 }
 
@@ -112,6 +139,18 @@
   box-sizing: border-box;
   border-radius: 6px;
   padding: 5px 4px;
+
+  @media (min-width: $table-width) {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+    position: absolute;
+    left: 50%;
+  }
 }
 
 .client-story__pointer {
@@ -119,6 +158,12 @@
   border-radius: 6px;
   width: 35px;
   height: 6px;
+
+  @media (min-width: $table-width) {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
 }
 
 .client-story__img {
@@ -126,6 +171,14 @@
 
   @media (min-width: $table-width) {
     position: absolute;
+    width: 100%;
+  }
+}
+
+.client-story__img img {
+  @media (min-width: $table-width) {
+    height: 620px;
+    object-fit: cover;
   }
 }
 
@@ -137,15 +190,10 @@
   }
 }
 
-.client-story__img--before {
-  @media (min-width: $table-width) {
-    right: 50%;
-  }
-}
-
 .client-story__img--after {
   @media (min-width: $table-width) {
-    left: 50%;
+    width: 50%;
+    overflow: hidden;
   }
 }
 
@@ -157,4 +205,10 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $table-width) {
+    line-height: 30px;
+    padding: 0;
+    border-bottom: 1px dotted $grey;
+  }
 }
