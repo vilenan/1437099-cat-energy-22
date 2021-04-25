@@ -74,6 +74,10 @@
   @media (min-width: $table-width) {
     width: 52%;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 60%;
+  }
 }
 
 .client-story__cost {
@@ -178,6 +182,11 @@
 .client-story__img img {
   @media (min-width: $table-width) {
     height: 620px;
+    object-fit: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 520px;
     object-fit: cover;
   }
 }
