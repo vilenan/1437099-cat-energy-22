@@ -1,27 +1,28 @@
-.contacts {
+.contacts__content-wrapper {
   @media (min-width: $desktop-width) {
     position: relative;
   }
 }
 
+.contacts__content-wrapper--index {
+  background-color: $white;
+}
+
 .contacts__content {
   padding-top: 28px;
   padding-bottom: 28px;
-  background-color: $white;
-
-  &--inner-page {
-    background-color: $grey--lighten;
-  }
 
   @media (min-width: $table-width) {
     padding-left: 41px;
     padding-right: 41px;
+    padding-top: 66px;
+    padding-bottom: 51px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 95px;
-    left: 140px;
+    left: 110px;
     width: 570px;
     background-color: $white;
   }

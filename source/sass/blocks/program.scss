@@ -27,6 +27,8 @@
   color: $black;
   padding-left: 71px;
   position: relative;
+  display: flex;
+  align-items: center;
 
   @media (min-width: $table-width) {
     padding-left: 0;
@@ -94,7 +96,7 @@
 
 .program__description {
   font-family: "Arial", sans-serif;
-  padding-bottom: 23px;
+  padding-bottom: 22px;
   border-bottom: 1px solid $grey;
 
   @media (min-width: $table-width) {
@@ -132,8 +134,26 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $black;
-  display: block;
-  padding: 15px 20px;
+  padding: 19px 0 21px;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &::after {
+    content: "";
+    width: 24px;
+    height: 12px;
+    margin-left: 15px;
+    background-image: url("../../img/icon-arrow-small.svg");
+  }
+
+  &:hover .program__link::after {
+    background-image: url("../../img/icon_arrow_big.svg");
+  }
 
   &:active {
     opacity: 0.3;

@@ -15,6 +15,11 @@
   justify-content: center;
   padding-top: 39px;
   padding-bottom: 32px;
+  border-bottom: 1px solid $grey;
+
+  @media (min-width: $table-width) {
+    border: none;
+  }
 }
 
 .footer__socials {
@@ -25,4 +30,9 @@
 .footer__copyright {
   padding-top: 28px;
   padding-bottom: 32px;
+  border-top: 1px solid $grey;
+
+  @media (min-width: $table-width) {
+    border: none;
+  }
 }

@@ -1,5 +1,30 @@
 .client-story {
   background-color: $grey--lighten;
+  padding-top: 27px;
+  padding-bottom: 25px;
+
+  @media (min-width: $table-width) {
+    background-image: linear-gradient($white 68%, $grey--lighten 42%);
+    border-top: 1px solid $grey--light;
+    min-height: 1081px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 656px;
+    background-image: linear-gradient($white 30%, $grey--lighten 30% 70%);
+    border: none;
+  }
+}
+
+.client-story__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.client-story__slider {
+  position: relative;
 }
 
 .client-story__title {
@@ -7,22 +32,53 @@
   line-height: 40px;
   font-weight: normal;
   color: $black;
+  margin: 0;
+  margin-bottom: 33px;
+
+  @media (min-width: $table-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 146px;
+  }
 }
 
 .client-story__content {
   font-family: "Arial", sans-serif;
+  margin-bottom: 25px;
+
+  @media (min-width: $table-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .client-story__content-points {
+  padding-bottom: 39px;
+
   @media (min-width: $table-width) {
     display: flex;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .client-story__results {
+  margin-bottom: 34px;
+
   @media (min-width: $table-width) {
     width: 52%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 60%;
   }
 }
 
@@ -31,10 +87,125 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $black;
+  text-align: center;
+
+  @media (min-width: $table-width) {
+    font-size: 20px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 52%;
+  }
+}
+
+.client-story__controls {
+  width: 196px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $table-width) {
+    padding-top: 700px;
+    width: auto;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 500px;
+  }
+}
+
+.client-story__bar {
+  display: none;
+
+  @media (min-width: $table-width) {
+    display: block;
+    width: 100%;
+    height: 6px;
+    border-radius: 6px;
+    background-color: $grey;
+    position: relative;
+    margin-right: 16px;
+    margin-left: 16px;
+  }
+}
+
+.client-story__switcher {
+  width: 84px;
+  background: $white;
+  border: 1px solid $grey;
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding: 5px 4px;
+
+  @media (min-width: $table-width) {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+    position: absolute;
+    left: 50%;
+  }
+}
+
+.client-story__pointer {
+  background-color: $accent;
+  border-radius: 6px;
+  width: 35px;
+  height: 6px;
+
+  @media (min-width: $table-width) {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+}
+
+.client-story__img {
+  text-align: center;
+
+  @media (min-width: $table-width) {
+    position: absolute;
+    width: 100%;
+  }
+}
+
+.client-story__img img {
+  @media (min-width: $table-width) {
+    height: 620px;
+    object-fit: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 520px;
+    object-fit: cover;
+  }
 }
 
 .client-story__img--closed {
   display: none;
+
+  @media (min-width: $table-width) {
+    display: block;
+  }
+}
+
+.client-story__img--after {
+  @media (min-width: $table-width) {
+    width: 50%;
+    overflow: hidden;
+  }
 }
 
 .client-story__button {
@@ -45,4 +216,10 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $table-width) {
+    line-height: 30px;
+    padding: 0;
+    border-bottom: 1px dotted $grey;
+  }
 }

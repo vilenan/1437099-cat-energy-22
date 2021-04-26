@@ -1,5 +1,4 @@
 .navigation {
-  // position: relative;
   width: auto;
 
   @media (max-width: $mobile-width-only) {
@@ -9,7 +8,7 @@
 }
 
 .navigation__toggle {
-  // position: absolute;
+  position: absolute;
 
   @media (min-width: $table-width) {
     display: none;
@@ -17,36 +16,22 @@
 }
 
 .navigation--closed .navigation__toggle {
-  &::before {
-    content: "";
-    position: absolute;
-    width: 24px;
-    height: 20px;
-    right: 20px;
-    top: 10px;
-    background-image: url("../../img/btn_ham.svg");
-    background-repeat: no-repeat;
-  }
-}
-
-@media (max-width: $mobile-width-only) {
-  .navigation--closed .navigation__list {
-    display: none;
-  }
+  width: 24px;
+  height: 20px;
+  right: 20px;
+  top: 20px;
+  background-image: url("../../img/btn_ham.svg");
+  background-repeat: no-repeat;
 }
 
 .navigation--opened .navigation__toggle {
-  &::before {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    right: 20px;
-    top: 10px;
-    background-image: url("../../img/icon_close.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
+  width: 20px;
+  height: 20px;
+  right: 20px;
+  top: 20px;
+  background-image: url("../../img/icon_close.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .navigation__list {
@@ -57,9 +42,15 @@
   }
 }
 
+@media (max-width: $mobile-width-only) {
+  .navigation--closed .navigation__list {
+    display: none;
+  }
+}
+
 .navigation__item {
-  padding-top: 23px;
-  padding-bottom: 23px;
+  padding-top: 22px;
+  padding-bottom: 21px;
   text-align: center;
   border-top: 1px solid $grey--light;
 
@@ -90,6 +81,7 @@
     font-size: 18px;
     line-height: 24px;
     font-weight: normal;
+    padding-bottom: 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -103,4 +95,22 @@
       color: $white;
     }
   }
+
+  &--current {
+    @media (min-width: $table-width) {
+      border-bottom: 2px solid $accent;
+    }
+
+    @media (min-width: $desktop-width) {
+      border-bottom: 2px solid $white;
+    }
+  }
+}
+
+.navigation__link[href]:hover {
+  opacity: 0.6;
+}
+
+.navigation__link[href]:active {
+  opacity: 0.3;
 }
