@@ -7,7 +7,8 @@
   @media (min-width: $table-width) {
     padding-top: 77px;
     padding-left: 53px;
-    padding-bottom: 53px;
+    padding-bottom: 35px;
+    padding-right: 58px;
   }
 
   @media (min-width: $desktop-width) {
@@ -35,6 +36,8 @@
     font-weight: normal;
     font-size: 36px;
     line-height: 36px;
+    align-items: flex-start;
+    margin-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
@@ -53,7 +56,7 @@
   width: 50px;
   height: 53px;
   left: 0;
-  background-image: url("../../img/icon_program_1.svg");
+  background-image: url("../img/icon_program_1.svg");
   background-size: contain;
 
   @media (min-width: $table-width) and (max-width: 1439px) {
@@ -73,13 +76,14 @@
   width: 67px;
   height: 53px;
   left: -7px;
-  background-image: url("../../img/icon_program_2.svg");
+  background-image: url("../img/icon_program_2.svg");
   background-size: contain;
 
   @media (min-width: $table-width) and (max-width: 1439px) {
     width: 268px;
     height: 200px;
-    left: calc(100% - 268px);
+    left: calc(100% - 238px);
+    top: 11px;
   }
 
   @media (min-width: $desktop-width) {
@@ -105,6 +109,7 @@
     font-size: 16px;
     line-height: 24px;
     color: $black;
+    padding-bottom: 33px;
   }
 }
 
@@ -138,7 +143,7 @@
   display: flex;
   align-items: center;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $table-width) {
     font-size: 20px;
     line-height: 30px;
   }
@@ -148,11 +153,12 @@
     width: 24px;
     height: 12px;
     margin-left: 15px;
-    background-image: url("../../img/icon-arrow-small.svg");
+    background-image: url("../img/icon-arrow-small.svg");
   }
 
-  &:hover .program__link::after {
-    background-image: url("../../img/icon_arrow_big.svg");
+  &:hover::after {
+    width: 32px;
+    background-image: url("../img/icon_arrow_big.svg");
   }
 
   &:active {

@@ -1,6 +1,11 @@
 .program-plan {
   margin-bottom: 42px;
   margin-top: 20px;
+
+  @media (min-width: $table-width) {
+    margin-top: 45px;
+    margin-bottom: 35px;
+  }
 }
 
 .program-plan__title {
@@ -11,6 +16,8 @@
   margin-bottom: 37px;
 
   @media (min-width: $table-width) {
+    margin: 0;
+    margin-bottom: 70px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -23,8 +30,8 @@
   @media (min-width: $table-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 150px;
-    row-gap: 90px;
+    column-gap: 60px;
+    row-gap: 68px;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,12 +54,19 @@
     width: 60px;
     height: 60px;
     background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-width: $table-width) {
+      width: 80px;
+      height: 80px;
+    }
   }
 
   @media (min-width: $table-width) {
     min-height: 230px;
     flex-direction: column;
     align-items: flex-start;
+    margin-right: 70px;
 
     &::after {
       content: counter(item);
@@ -63,26 +77,26 @@
       line-height: 280px;
       color: $grey--lighten;
       z-index: -1;
-      top: -30px;
-      right: 0;
+      top: -40px;
+      right: 25px;
     }
   }
 }
 
 .program-plan__item--healthy-components::before {
-  background-image: url("../../img/index_icon_1.png");
+  background-image: url("../img/index_icon_1.png");
 }
 
 .program-plan__item--powder::before {
-  background-image: url("../../img/index_icon_2.png");
+  background-image: url("../img/index_icon_2.png");
 }
 
 .program-plan__item--include::before {
-  background-image: url("../../img/index_icon_3.png");
+  background-image: url("../img/index_icon_3.png");
 }
 
 .program-plan__item--terms::before {
-  background-image: url("../../img/index_icon_4.png");
+  background-image: url("../img/index_icon_4.png");
 }
 
 .program-plan__image {
@@ -96,7 +110,9 @@
 
   @media (min-width: $table-width) {
     margin-left: 0;
-    margin-top: 90px;
+    margin-top: 113px;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {

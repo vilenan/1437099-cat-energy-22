@@ -1,12 +1,12 @@
 .client-story {
   background-color: $grey--lighten;
-  padding-top: 27px;
-  padding-bottom: 25px;
+  padding-bottom: 35px;
 
   @media (min-width: $table-width) {
-    background-image: linear-gradient($white 68%, $grey--lighten 42%);
+    background-image: linear-gradient($white 58%, $grey--lighten 42%);
     border-top: 1px solid $grey--light;
     min-height: 1081px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,6 +17,12 @@
 }
 
 .client-story__wrapper {
+  padding-top: 27px;
+
+  @media (min-width: $table-width) {
+    padding-top: 43px;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -25,6 +31,11 @@
 
 .client-story__slider {
   position: relative;
+
+  @media (min-width: $table-width) {
+    width: 677px;
+    margin: 0 auto;
+  }
 }
 
 .client-story__title {
@@ -53,11 +64,12 @@
   @media (min-width: $table-width) {
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 41px;
   }
 }
 
 .client-story__content-points {
-  padding-bottom: 39px;
+  padding-bottom: 50px;
 
   @media (min-width: $table-width) {
     display: flex;
@@ -105,14 +117,14 @@
 }
 
 .client-story__controls {
-  width: 196px;
+  width: 212px;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   @media (min-width: $table-width) {
-    padding-top: 700px;
+    padding-top: 530px;
     width: auto;
     margin-left: 60px;
     margin-right: 60px;
@@ -144,7 +156,7 @@
   border: 1px solid $grey;
   box-sizing: border-box;
   border-radius: 6px;
-  padding: 5px 4px;
+  padding: 3px 6px;
 
   @media (min-width: $table-width) {
     width: 34px;
@@ -173,23 +185,33 @@
 }
 
 .client-story__img {
-  text-align: center;
+  margin: 0 auto 30px;
+  width: 320px;
 
   @media (min-width: $table-width) {
     position: absolute;
-    width: 100%;
+    width: 677px;
   }
 }
 
 .client-story__img img {
-  @media (min-width: $table-width) {
-    height: 620px;
-    object-fit: cover;
-  }
+  margin-left: -20px;
 
-  @media (min-width: $desktop-width) {
-    height: 520px;
-    object-fit: cover;
+  @media (min-width: $table-width) {
+    max-width: none;
+    margin-left: 0;
+  }
+}
+
+.client-story__img--before img {
+  @media (min-width: $table-width) {
+    width: 677px;
+  }
+}
+
+.client-story__img--after img {
+  @media (min-width: $table-width) {
+    width: 677px;
   }
 }
 
@@ -201,10 +223,19 @@
   }
 }
 
-.client-story__img--after {
+.client-story__img--before {
   @media (min-width: $table-width) {
     width: 50%;
     overflow: hidden;
+    background-image: linear-gradient(#ffffff 34%, #f2f2f2 34%);
+  }
+}
+
+.client-story__img--after {
+  @media (min-width: $table-width) {
+    // width: 50%;
+    overflow: hidden;
+    // right: -15%;
   }
 }
 
