@@ -3,7 +3,8 @@
   padding-bottom: 35px;
 
   @media (min-width: $table-width) {
-    background-image: linear-gradient($white 58%, $grey--lighten 42%);
+    // background-image: linear-gradient($white 58%, $grey--lighten 42%);
+    background-color: $white;
     border-top: 1px solid $grey--light;
     min-height: 1081px;
     padding-bottom: 0;
@@ -20,12 +21,26 @@
   padding-top: 27px;
 
   @media (min-width: $table-width) {
+    padding: 0;
     padding-top: 43px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+.client-story__images-and-bar-wrapper {
+  @media (min-width: $table-width) {
+    background-color: $grey--lighten;
+  }
+}
+
+.client-story__images-wrapper {
+  @media (min-width: $table-width) {
+    height: 520px;
+    background-image: linear-gradient($white 34%, $grey--lighten 34%);
   }
 }
 
@@ -66,6 +81,10 @@
     line-height: 24px;
     margin-bottom: 41px;
   }
+}
+
+.client-story__content-wrapper {
+  padding: 0 30px;
 }
 
 .client-story__content-points {
@@ -124,15 +143,14 @@
   align-items: center;
 
   @media (min-width: $table-width) {
-    padding-top: 530px;
     width: auto;
     margin-left: 60px;
     margin-right: 60px;
   }
 
-  @media (min-width: $desktop-width) {
-    padding-top: 500px;
-  }
+  // @media (min-width: $desktop-width) {
+
+  // }
 }
 
 .client-story__bar {
@@ -191,6 +209,7 @@
   @media (min-width: $table-width) {
     position: absolute;
     width: 677px;
+    height: 520px;
   }
 }
 
