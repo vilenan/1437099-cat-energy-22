@@ -6,6 +6,11 @@
     margin-top: 45px;
     margin-bottom: 35px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 45px;
+    margin-bottom: 0;
+  }
 }
 
 .program-plan__title {

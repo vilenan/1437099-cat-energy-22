@@ -9,6 +9,10 @@
     margin-bottom: 0;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
+  }
+
   &::before {
     content: "";
     position: absolute;
