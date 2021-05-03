@@ -100,7 +100,9 @@
     @media (min-width: $table-width) {
       border-bottom: 2px solid $accent;
     }
+  }
 
+  &--index--current {
     @media (min-width: $desktop-width) {
       border-bottom: 2px solid $white;
     }
