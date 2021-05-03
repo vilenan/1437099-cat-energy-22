@@ -23,7 +23,7 @@
       <div class="navigation__wrapper">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link navigation__link--index navigation__link--current">Главная</a>
+            <a class="navigation__link navigation__link--index navigation__link--index--current">Главная</a>
           </li>
           <li class="navigation__item">
             <a class="navigation__link navigation__link--index" href="catalog.html">каталог продукции</a>
@@ -93,52 +93,65 @@
     </section>
 
     <section class="client-story">
-      <div class="client-story__wrapper container">
-        <div class="client-story__content-wrapper">
-          <h2 class="client-story__title">Живой пример</h2>
-          <p class="client-story__content">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
-            Energy
-            Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
-            по
-            16
-            часов в день. </p>
-          <div class="client-story__content-points">
-            <dl class="client-story__results results">
-              <div class="results__item">
-                <dt class="results__number">5 КГ</dt>
-                <dd class="results__description">снижение веса</dd>
-              </div>
-              <div class="results__item">
-                <dt class="results__number">60 ДНЕЙ</dt>
-                <dd class="results__description">затрачено времени</dd>
-              </div>
-            </dl>
-            <div class="client-story__cost">Затраты на питание: <span>15 000 РУБ.</span></div>
-          </div>
-        </div>
-        <div class="client-story__slider">
-          <div class="client-story__img client-story__img--before">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/before-desktop.png">
-              <img src="img/before-mobile.png" alt="кот до прохождения программы снижения веса Кэт энерджи" width="310"
-                height="232">
-            </picture>
-          </div>
-          <div class="client-story__img client-story__img--after client-story__img--closed">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/after-desktop.png">
-              <img src="img/after_mobile.png" alt="кот после прохождения программы снижения веса Кэт энерджи">
-            </picture>
-          </div>
-          <div class="client-story__controls">
-            <button class="client-story__button button" type="button">было</button>
-            <div class="client-story__bar"></div>
-            <div class="client-story__switcher">
-              <div class="client-story__pointer"></div>
+      <div class="client-story__wrapper">
+        <div class="container">
+          <div class="client-story__content-wrapper">
+            <h2 class="client-story__title">Живой пример</h2>
+            <p class="client-story__content">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
+              Energy
+              Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
+              по
+              16
+              часов в день. </p>
+            <div class="client-story__content-points">
+              <dl class="client-story__results results">
+                <div class="results__item">
+                  <dt class="results__number">5 КГ</dt>
+                  <dd class="results__description">снижение веса</dd>
+                </div>
+                <div class="results__item">
+                  <dt class="results__number">60 ДНЕЙ</dt>
+                  <dd class="results__description">затрачено времени</dd>
+                </div>
+              </dl>
+              <div class="client-story__cost">Затраты на питание: <span>15 000 РУБ.</span></div>
             </div>
-            <button class="client-story__button button" type="button">стало</button>
           </div>
         </div>
+        <div class="client-story__images-and-bar-wrapper">
+          <div class="client-story__images-wrapper">
+            <div class="container">
+              <div class="client-story__slider">
+
+                <div class="client-story__img client-story__img--after client-story__img--closed">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/after-desktop.png">
+                    <img src="img/after_mobile.png" alt="кот после прохождения программы снижения веса Кэт энерджи">
+                  </picture>
+                </div>
+                <div class="client-story__img client-story__img--before">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/before-desktop.png">
+                    <img src="img/before-mobile.png" alt="кот до прохождения программы снижения веса Кэт энерджи"
+                      width="320">
+                  </picture>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="client-story__controls-wrapper container">
+            <div class="client-story__controls">
+              <button class="client-story__button button" type="button">было</button>
+              <div class="client-story__bar"></div>
+              <div class="client-story__switcher">
+                <div class="client-story__pointer"></div>
+              </div>
+              <button class="client-story__button button" type="button">стало</button>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   </main>
@@ -148,7 +161,7 @@
     <div class="footer__contacts contacts">
       <div class="contacts__content-wrapper contacts__content-wrapper--index container">
         <div class="contacts__content contacts-info">
-          <p class="contacts-info__text">приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts-info__text">приглашаем к&nbsp;сотрудничеству дилеров!</p>
           <address class="contacts-info__adress">
             <p>ул. Большая Конюшенная, д. 19/8</p>
             <p>Санкт-Петербург</p>

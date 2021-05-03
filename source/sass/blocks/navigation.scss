@@ -20,7 +20,7 @@
   height: 20px;
   right: 20px;
   top: 20px;
-  background-image: url("../../img/btn_ham.svg");
+  background-image: url("../img/btn_ham.svg");
   background-repeat: no-repeat;
 }
 
@@ -29,7 +29,7 @@
   height: 20px;
   right: 20px;
   top: 20px;
-  background-image: url("../../img/icon_close.svg");
+  background-image: url("../img/icon_close.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -81,7 +81,7 @@
     font-size: 18px;
     line-height: 24px;
     font-weight: normal;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
   }
 
   @media (min-width: $desktop-width) {
@@ -100,7 +100,9 @@
     @media (min-width: $table-width) {
       border-bottom: 2px solid $accent;
     }
+  }
 
+  &--index--current {
     @media (min-width: $desktop-width) {
       border-bottom: 2px solid $white;
     }
