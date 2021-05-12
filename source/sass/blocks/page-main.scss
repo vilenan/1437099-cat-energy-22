@@ -10,11 +10,17 @@
   line-height: 36px;
   font-weight: normal;
   color: $black;
+  margin-top: 27px;
   margin-bottom: 40px;
 
   @media (min-width: $table-width) {
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 55px;
+    margin-top: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 45px;
   }
 }

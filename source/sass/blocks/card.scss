@@ -2,14 +2,13 @@
 .card {
   display: flex;
   flex-direction: column;
-  padding: 20px 20px 20px 25px;
+  padding: 20px 20px 25px 20px;
   border-top: 1px solid $grey--light;
 
   @media (min-width: $table-width) {
-    background-image: linear-gradient($white 21%, $grey--lighten 21% 79%);
+    background-image: linear-gradient($white 14%, $grey--lighten 14% 86%);
     padding: 0 36px 40px;
     border: none;
-    min-height: 511px;
   }
 }
 
@@ -17,8 +16,20 @@
   margin: 0;
   font-size: 16px;
   line-height: 20px;
+  font-weight: normal;
   text-transform: uppercase;
   color: $grey--darkest;
+  margin-bottom: 15px;
+  padding-right: 40px;
+
+  @media (min-width: $table-width) {
+    font-size: 20px;
+    line-height: 24px;
+    padding-right: 0;
+    width: 150px;
+    text-align: center;
+    margin-top: 25px;
+  }
 }
 
 .card__info-container {
@@ -37,6 +48,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (min-width: $table-width) {
+    min-height: 210px;
+  }
 }
 
 .card__link {
@@ -51,6 +66,24 @@
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
+  margin-bottom: 20px;
+
+  @media (min-width: $table-width) {
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 33px;
+  }
+}
+
+.card__data-item {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $table-width) {
+    border-bottom: 1px solid $grey;
+    padding-top: 6px;
+    padding-bottom: 8px;
+  }
 }
 
 .card__data-title {

@@ -1,5 +1,11 @@
 .promo-gift {
+  margin-top: 38px;
   margin-bottom: 35px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 .promo-gift__wrapper {
@@ -12,6 +18,24 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $table-width) {
+    flex-direction: row;
+    padding: 58px 120px 60px 78px;
+    background-position: 0 -350px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    padding: 58px 41px 42px;
+    background-position: 0 0;
+  }
+}
+
+.promo-gift__image {
+  @media (min-width: $table-width) {
+    width: 80px;
+  }
 }
 
 .promo-gift__text {
@@ -22,4 +46,14 @@
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+
+  @media (min-width: $table-width) {
+    margin: 0;
+    width: 170px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
 }
