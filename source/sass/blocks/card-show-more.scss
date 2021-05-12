@@ -9,10 +9,11 @@
   @media (min-width: $table-width) {
     padding: 52px 36px 40px;
     border: 1px solid $grey--light;
-    margin-top: 26%;
+    margin-top: 32%;
+    justify-content: space-between;
   }
 
-  @media (min-width: $table-width) {
+  @media (min-width: $desktop-width) {
     margin-top: 45%;
   }
 }
@@ -31,8 +32,15 @@
 .card-show-more__title {
   font-size: 16px;
   line-height: 20px;
+  font-weight: normal;
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $table-width) {
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+  }
 }
 
 .card-show-more__text {
@@ -42,4 +50,21 @@
   font-size: 12px;
   line-height: 16px;
   color: $grey--darken;
+
+  @media (min-width: $table-width) {
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+  }
+}
+
+.card-show-more__info-container {
+  @media (min-width: $table-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
