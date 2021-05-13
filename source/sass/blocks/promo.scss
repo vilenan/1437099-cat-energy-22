@@ -10,7 +10,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 55px;
+    margin-bottom: 80px;
   }
 
   &::before {
@@ -35,7 +35,7 @@
       background-repeat: no-repeat;
       background-size: cover;
       width: 50%;
-      min-height: 696px;
+      min-height: 720px;
       right: 0;
       top: -163px;
       z-index: -1;
@@ -122,7 +122,7 @@
   @media (min-width: $desktop-width) {
     width: 552px;
     position: absolute;
-    left: 448px;
+    left: 538px;
     margin-top: 0;
   }
 }

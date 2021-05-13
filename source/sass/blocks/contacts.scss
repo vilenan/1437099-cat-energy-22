@@ -20,10 +20,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-left: 76px;
     position: absolute;
     top: 95px;
     left: 110px;
-    width: 570px;
+    width: 490px;
     background-color: $white;
   }
 }

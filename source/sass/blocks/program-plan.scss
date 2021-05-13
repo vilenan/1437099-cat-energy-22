@@ -42,7 +42,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 94px;
+    column-gap: 80px;
   }
 }
 
@@ -59,7 +59,8 @@
     width: 60px;
     height: 60px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-color: $accent;
+    background-position: center;
 
     @media (min-width: $table-width) {
       width: 80px;
@@ -86,22 +87,26 @@
       right: 25px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
 }
 
 .program-plan__item--healthy-components::before {
-  background-image: url("../img/index_icon_1.png");
+  background-image: url("../img/icon_program_plan_1.svg");
 }
 
 .program-plan__item--powder::before {
-  background-image: url("../img/index_icon_2.png");
+  background-image: url("../img/icon_program_plan_2.svg");
 }
 
 .program-plan__item--include::before {
-  background-image: url("../img/index_icon_3.png");
+  background-image: url("../img/icon_program_plan_3.svg");
 }
 
 .program-plan__item--terms::before {
-  background-image: url("../img/index_icon_4.png");
+  background-image: url("../img/icon_program_plan_4.svg");
 }
 
 .program-plan__image {
