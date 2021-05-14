@@ -41,9 +41,12 @@
   }
 
   @media (min-width: $desktop-width) {
+    align-items: center;
     padding-left: 162px;
     margin-bottom: 73px;
+    margin-top: 36px;
   }
+
 
   &::before {
     content: "";
@@ -89,7 +92,7 @@
   @media (min-width: $desktop-width) {
     width: 134px;
     height: 100px;
-    left: 0;
+    left: -20px;
   }
 }
 
@@ -146,6 +149,10 @@
   @media (min-width: $table-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 
   &::after {

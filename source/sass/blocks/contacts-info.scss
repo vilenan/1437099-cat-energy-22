@@ -30,6 +30,10 @@
     text-align: right;
     width: 160px;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .contacts-info__adress p {
