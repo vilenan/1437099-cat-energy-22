@@ -13,6 +13,7 @@
   <header class="page-header container">
     <a class="logo" href="index.html">
       <picture>
+        <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
         <img class="logo__image" src="img/logo-mobile.svg" alt="логотип Кэт энерджи" width="34">
       </picture>
@@ -290,8 +291,11 @@
     <div class="footer__contacts contacts">
       <div class="contacts__content-wrapper container">
         <div class="contacts__content contacts-info">
-          <p class="contacts-info__text">приглашаем к сотрудничеству дилеров!</p>
-          <address class="contacts-info__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <p class="contacts-info__text">приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <address class="contacts-info__adress">
+            <p class="contacts-info__street">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="contacts-info__city">Санкт-Петербург</p>
+          </address>
         </div>
       </div>
       <div class="contacts__map map">

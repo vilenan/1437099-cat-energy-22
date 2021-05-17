@@ -10,7 +10,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 60px;
+    margin-bottom: 66px;
   }
 }
 
@@ -38,18 +38,30 @@
   margin-bottom: 36px;
 
   @media (min-width: $table-width) {
-    margin-bottom: 78px;
+    margin-bottom: 60px;
   }
 }
 
 
 .form__section--comments {
   margin-bottom: 38px;
+
+  @media (min-width: $table-width) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 66px;
+  }
 }
 
 
 .form__section--extra {
-  margin-bottom: 36px;
+  margin-bottom: 26px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .form__section--contacts::before,
@@ -81,7 +93,7 @@
   margin-bottom: 42px;
 
   @media (min-width: $table-width) {
-    margin-bottom: 88px;
+    margin-bottom: 72px;
   }
 
   @media (min-width: $desktop-width) {
@@ -116,24 +128,23 @@
 
   @media (min-width: $table-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 76px;
+    grid-template-columns: 6fr 5fr;
+    margin-top: 57px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
   }
 }
 
 .form__button-wrapper {
-  // padding-bottom: 15px;
-
   @media (min-width: $table-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
-    margin-bottom: 72px;
+    margin-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -186,7 +197,19 @@
 
 .form__item--goal {
   @media (min-width: $table-width) {
-    margin-bottom: 13px;
+    margin-bottom: 10px;
+  }
+}
+
+.form__item--extra {
+  @media (min-width: $table-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.form__item--extra:last-child {
+  @media (min-width: $table-width) and (max-width: 1439px) {
+    margin-bottom: 30px;
   }
 }
 
@@ -267,7 +290,7 @@
 }
 
 .form__input-text {
-  padding: 13px;
+  padding: 13px 15px;
   border: 1px solid $grey--light;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
@@ -279,7 +302,7 @@
   box-sizing: border-box;
 
   @media (min-width: $table-width) {
-    padding: 11px;
+    padding: 11px 18px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -344,7 +367,7 @@
     position: absolute;
     width: 18px;
     height: 14px;
-    background-image: url("../../img/checkbox_checked.svg");
+    background-image: url("../img/checkbox_checked.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     left: 8px;
@@ -393,10 +416,11 @@
   margin-top: 14px;
   margin-bottom: 32px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $table-width) {
     font-size: 16px;
     line-height: 16px;
-    margin-top: 18px;
-    margin-bottom: 18px;
+    text-align: left;
+    margin-top: 8px;
+    margin-bottom: 0;
   }
 }
