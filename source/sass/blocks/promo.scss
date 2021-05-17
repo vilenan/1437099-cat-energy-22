@@ -23,6 +23,10 @@
     height: 302px;
     z-index: -1;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background@2x.jpg");
+    }
+
     @media (min-width: $table-width) {
       display: none;
     }
@@ -39,6 +43,10 @@
       right: 0;
       top: -163px;
       z-index: -1;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/background_index_desktop@2x.png");
+      }
     }
   }
 }

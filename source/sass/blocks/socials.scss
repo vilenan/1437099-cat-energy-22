@@ -8,3 +8,21 @@
   display: flex;
   justify-content: space-between;
 }
+
+.socials__image--vkontakte {
+  @media (min-width: $table-width) {
+    width: 30px;
+  }
+}
+
+.socials__image--instagram {
+  @media (min-width: $table-width) {
+    width: 23px;
+  }
+}
+
+.socials__image--facebook {
+  @media (min-width: $table-width) {
+    width: 13px;
+  }
+}
