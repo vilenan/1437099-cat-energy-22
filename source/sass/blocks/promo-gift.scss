@@ -9,26 +9,39 @@
 }
 
 .promo-gift__wrapper {
-  background-image: url("../../img/promo_catalog.jpg");
+  background-image: url("../img/promo-mobile.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
-  padding: 58px 60px 43px;
+  padding: 58px 50px 43px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo-mobile@2x.jpg");
+  }
+
   @media (min-width: $table-width) {
     flex-direction: row;
     padding: 58px 120px 60px 78px;
-    background-position: 0 -350px;
+    background-image: url("../img/promo-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
     padding: 58px 41px 42px;
+    background-image: url("../img/promo-desktop.jpg");
     background-position: 0 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-desktop@2x.jpg");
+    }
   }
 }
 
