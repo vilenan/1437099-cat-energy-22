@@ -208,6 +208,16 @@
     filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
     position: absolute;
     left: 48%;
+
+    &:hover {
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+    }
+
+    &:active,
+    &:focus {
+      border: 1px solid $accent;
+      filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -298,5 +308,14 @@
     line-height: 30px;
     padding: 0;
     border-bottom: 1px dotted $grey;
+
+    &:hover {
+      border-bottom: 1px solid $grey--darken;
+    }
+
+    &:active,
+    &:focus {
+      border-bottom: 1px solid $grey--lighten;
+    }
   }
 }

@@ -30,6 +30,14 @@
   color: $grey--darken;
   background-color: $grey--lighten;
   width: 100%;
+
+  &:hover {
+    background-color: $grey--light;
+  }
+
+  &:focus {
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
 
 .card-show-more__title {
