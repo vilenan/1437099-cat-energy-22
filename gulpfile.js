@@ -22,7 +22,8 @@ const styles = () => {
     .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer(),
+      csso()
     ]))
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
@@ -78,10 +79,9 @@ exports.copyImages = copyImages;
 //webp
 
 const createWebp = () => {
-  return gulp.src("source/img/**/*.{png,jpg}")
+  return gulp.src("source/img/**/*.{jpg,png}")
     .pipe(webp({ quality: 90 }))
     .pipe(gulp.dest("build/img"))
-
 }
 
 exports.createWebp = createWebp;
