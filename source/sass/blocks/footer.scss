@@ -29,6 +29,14 @@
   }
 }
 
+.footer__logo-name[href]:hover {
+  opacity: 0.8;
+}
+
+.footer__logo-name[href]:active {
+  opacity: 0.6;
+}
+
 .footer__socials {
   padding-top: 24px;
   padding-bottom: 16px;

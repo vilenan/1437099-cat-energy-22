@@ -9,6 +9,18 @@
   justify-content: space-between;
 }
 
+.socials__image {
+  fill: $grey-dark;
+}
+
+.socials__link:hover .socials__image {
+  fill: $accent;
+}
+
+.socials__link:active {
+  opacity: 0.6;
+}
+
 .socials__image--vkontakte {
   @media (min-width: $table-width) {
     width: 30px;
