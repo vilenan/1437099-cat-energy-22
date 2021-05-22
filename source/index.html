@@ -12,8 +12,6 @@
   <link rel="icon" href="img/favicon16.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon152.png" type="image/png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" href="css/style.min.css" as="style">
-  <link rel="preload" href="js/nav.min.js" as="script">
   <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
 </head>
@@ -56,9 +54,10 @@
           <h2 class="promo__title">Функциональное питание для котов</h2>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
           <picture class="promo__image">
-            <source media="(min-width: 1440px)"
+            <source type="image/webp" media="(min-width: 1440px)"
               srcset="img/index-can-desktop.webp 1x, img/index-can-desktop@2x.webp 2x">
-            <source media="(min-width: 768px)" srcset="img/index-can-tablet.webp 1x, img/index-can-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/index-can-tablet.webp 1x, img/index-can-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/index-can-mobile.webp 1x, img/index-can-mobile@2x.webp 2x">
 
             <source media="(min-width: 1440px)" srcset="img/index-can-desktop.png 1x, img/index-can-desktop@2x.png 2x">
@@ -141,7 +140,8 @@
 
                 <div class="client-story__img client-story__img--after client-story__img--closed">
                   <picture>
-                    <source media="(min-width: 768px)" srcset="img/after-desktop.webp 1x, img/after-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/after-desktop.webp 1x, img/after-desktop@2x.webp 2x">
                     <source type="image/webp" srcset="img/after_mobile.webp 1x, img/after_mobile@2x.webp 2x">
 
                     <source media="(min-width: 768px)" srcset="img/after-desktop.png 1x, img/after-desktop@2x.png 2x">
@@ -151,7 +151,7 @@
                 </div>
                 <div class="client-story__img client-story__img--before">
                   <picture>
-                    <source media="(min-width: 768px)"
+                    <source type="image/webp" media="(min-width: 768px)"
                       srcset="img/before-desktop.webp 1x, img/before-desktop@2x.webp 2x">
                     <source type="image/webp" srcset="img/before-mobile.webp 1x, img/before-mobile@2x.webp 2x">
 

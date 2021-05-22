@@ -148,8 +148,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    // grid-column-start: 1;
-    // grid-column-end: -1;
     margin-bottom: 82px;
   }
 }
@@ -316,6 +314,27 @@
     box-shadow: 0 0 0 1px $grey--darken;
   }
 
+  &:invalid {
+    border: 1px solid $error;
+    box-shadow: 0 0 0 1px $error;
+  }
+
+  &:focus + .form__input-image--email {
+    stroke: $accent;
+  }
+
+  &:focus + .form__input-image--phone {
+    fill: $accent;
+  }
+
+  &:invalid + .form__input-image--email {
+    stroke: $error;
+  }
+
+  &:invalid + .form__input-image--phone {
+    fill: $error;
+  }
+
   &--textarea {
     @include reset;
     width: 100%;
@@ -388,6 +407,14 @@
 .form__input-image {
   position: absolute;
   right: 20px;
+}
+
+.form__input-image--email {
+  stroke: $grey--darkest;
+}
+
+.form__input-image--phone {
+  fill: $grey--darkest;
 }
 
 .form__button {
