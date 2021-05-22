@@ -314,7 +314,7 @@
     box-shadow: 0 0 0 1px $grey--darken;
   }
 
-  &:invalid {
+  &:required:invalid {
     border: 1px solid $error;
     box-shadow: 0 0 0 1px $error;
   }
@@ -327,11 +327,11 @@
     fill: $accent;
   }
 
-  &:invalid + .form__input-image--email {
+  &:required:invalid + .form__input-image--email {
     stroke: $error;
   }
 
-  &:invalid + .form__input-image--phone {
+  &:required:invalid + .form__input-image--phone {
     fill: $error;
   }
 
