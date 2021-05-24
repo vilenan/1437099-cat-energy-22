@@ -1,9 +1,13 @@
 .sub-catalog {
-  margin-bottom: 39px;
+  margin-bottom: 36px;
   position: relative;
 
   @media (min-width: $table-width) {
     margin-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 86px;
   }
 }
 
@@ -14,7 +18,7 @@
   position: absolute;
   width: 100%;
   z-index: -1;
-  top: 20px;
+  top: 15px;
 }
 
 .sub-catalog__item {
@@ -43,42 +47,15 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 80px;
-    margin-left: -40px;
+    margin-left: 0;
     padding-left: 40px;
     padding-right: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -40px;
+  }
 }
-
-// .sub-catalog__title::after {
-//   flex-grow: 1;
-//   flex-shrink: 0;
-//   content: "";
-//   height: 2px;
-//   background-color: $accent;
-//   margin-left: 22px;
-
-//   @media (min-width: $table-width) {
-//     margin-left: 36px;
-//   }
-// }
-
-// .sub-catalog__title::before {
-//   @media (min-width: $table-width) {
-//     width: 30px;
-//     content: "";
-//     height: 2px;
-//     background-color: $accent;
-//     margin-right: 36px;
-//   }
-
-//   @media (min-width: $desktop-width) {
-//     min-width: 70px;
-//     content: "";
-//     height: 2px;
-//     background-color: $accent;
-//     margin-right: 36px;
-//   }
-// }
 
 .sub-catalog__wrapper {
   @media (min-width: $desktop-width) {

@@ -16,6 +16,7 @@
   &::before {
     content: "";
     position: absolute;
+    background-color: $accent;
     background-image: url("../img/index-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;

@@ -1,12 +1,35 @@
 .socials {
   width: 130px;
   margin: 0 auto;
+
+  @media (min-width: $table-width) {
+    width: 150px;
+  }
 }
 
 .socials__list {
   @include reset;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $table-width) {
+    padding-left: 20px;
+  }
+}
+
+.socials__image--vkontakte {
+  @media (min-width: $table-width) {
+    width: 30px;
+    height: 22px;
+  }
+}
+
+.socials__image--instagram {
+  @media (min-width: $table-width) {
+    width: 23px;
+    height: 23px;
+  }
 }
 
 .socials__image--instagram,
@@ -19,7 +42,8 @@
   stroke: $grey-dark;
 
   @media (min-width: $table-width) {
-    width: 13px;
+    width: 23px;
+    height: 28px;
   }
 }
 
@@ -37,16 +61,4 @@
 
 .socials__link:active {
   opacity: 0.6;
-}
-
-.socials__image--vkontakte {
-  @media (min-width: $table-width) {
-    width: 30px;
-  }
-}
-
-.socials__image--instagram {
-  @media (min-width: $table-width) {
-    width: 23px;
-  }
 }

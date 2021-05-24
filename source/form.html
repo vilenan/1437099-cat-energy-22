@@ -25,8 +25,8 @@
         <img class="logo__image" src="img/logo-mobile.svg" alt="логотип Кэт энерджи" width="34">
       </picture>
     </a>
-    <nav class="navigation navigation--opened">
-      <button class="navigation__toggle button" type="button">
+    <nav class="navigation">
+      <button class="navigation__toggle navigation__toggle--no-js button" type="button">
         <span class="visually-hidden">открыть меню</span>
       </button>
       <div class="navigation__wrapper">
@@ -51,7 +51,7 @@
         кота
       </p>
       <form class="form__container" action="https://echo.htmlacademy.ru" method="POST">
-        <div class="form__section-wrapper--user">
+        <div class="form__section-wrapper form__section-wrapper--user">
           <fieldset class="form__section form__section--user">
             <div class="container container--form container--user">
               <p class="form__item">
@@ -71,7 +71,7 @@
 
           <fieldset class="form__section form__section--goal">
             <div class="container container--form container--goal">
-              <div class="form__section-wrapper--goal">
+              <div class="form__section-wrapper form__section-wrapper--goal">
                 <p class="form__item form__item--goal">
                   <input class="form__input-radio visually-hidden" type="radio" name="goal" value="slimming"
                     id="slimming" checked>
@@ -86,7 +86,7 @@
                   <input class="form__input-radio visually-hidden" type="radio" name="goal" value="recommend"
                     id="recommend">
                   <label class="form__input-label form__input-label--radio" for="recommend">не знаю (нужен
-                    вашсовет)</label>
+                    ваш совет)</label>
                 </p>
               </div>
             </div>
@@ -97,7 +97,7 @@
             <span class="form__legend">Контактные данные<br> (владельца кота)</span>
           </legend>
           <div class="container container--form">
-            <div class="form__section-wrapper--contacts">
+            <div class="form__section-wrapper form__section-wrapper--contacts">
               <p class="form__item form__item--contacts">
                 <label class="form__input-label" for="email-field">e-mail:<sup>*</sup></label>
                 <input class="form__input-text" type="email" id="email-field" name="owner-email"
@@ -134,7 +134,7 @@
             <span class="form__legend">Дополнительно</span>
           </legend>
           <div class="container container--form">
-            <div class="form__section-wrapper--extra">
+            <div class="form__section-wrapper form__section-wrapper--extra">
               <p class="form__item form__item--extra">
                 <input class="form__input-checkbox visually-hidden" type="checkbox" name="sweetener" id="sweetener"
                   checked>
@@ -225,7 +225,7 @@
       </div>
     </div>
   </footer>
-  <script src="js/nav.js"></script>
+  <script src="js/nav.min.js"></script>
 </body>
 
 </html>

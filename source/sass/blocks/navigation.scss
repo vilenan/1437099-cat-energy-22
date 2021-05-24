@@ -15,6 +15,10 @@
   }
 }
 
+.navigation__toggle--no-js {
+  display: none;
+}
+
 .navigation--closed .navigation__toggle {
   width: 24px;
   height: 20px;

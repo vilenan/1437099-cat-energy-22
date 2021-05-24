@@ -2,12 +2,12 @@
   margin-bottom: 25px;
 
   @media (min-width: $table-width) {
-    margin-bottom: 68px;
+    margin-bottom: 74px;
     padding-top: 36px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 76px;
+    margin-bottom: 70px;
   }
 }
 
@@ -29,5 +29,6 @@
     padding: 0 110px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 80px;
+    row-gap: 80px;
   }
 }

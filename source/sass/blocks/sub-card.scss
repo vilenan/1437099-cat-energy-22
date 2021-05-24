@@ -30,6 +30,8 @@
   font-style: normal;
   font-weight: normal;
   text-transform: uppercase;
+  margin: 0;
+  margin-top: 11px;
 
   @media (min-width: $table-width) {
     margin: 0;
@@ -50,12 +52,15 @@
   line-height: 14px;
   display: flex;
   justify-content: space-between;
+  margin: 0;
+  margin-top: 14px;
+  margin-bottom: 15px;
 
   @media (min-width: $table-width) {
-    margin: 0;
     font-size: 16px;
     line-height: 20px;
     justify-content: flex-end;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
