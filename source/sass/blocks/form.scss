@@ -419,6 +419,10 @@
   &:disabled + .form__input-label--checkbox::after {
     opacity: 0.3;
   }
+
+  &:disabled + .form__input-label--checkbox {
+    opacity: 0.3;
+  }
 }
 
 .form__input-image {
